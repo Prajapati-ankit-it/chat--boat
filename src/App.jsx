@@ -12,7 +12,7 @@ function App() {
     setAnswer("Loading...");
     try {
       const response = await axios({
-        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyC7mau7wb1zMbjQUhFPUBIpV89Dxi0RE0s',
+        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=Your_API_Key',
         method: "post",
         data: { "contents": [{ "parts": [{ "text": question }] }] }
       });
@@ -38,5 +38,5 @@ function App() {
     </>
   )
 }
-
+//AIzaSyC7mau7wb1zMbjQUhFPUBIpV89Dxi0RE0s
 export default App
